@@ -1,0 +1,12 @@
+---
+- hosts: linux
+  vars:
+    test: welcome to ansible tarining
+    Test: testing
+  tasks:
+  - name: print variable
+    debug:
+      msg: "{{ test }}"
+  - name: print another variable
+    debug:
+      msg: "{{ Test }}"
